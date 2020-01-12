@@ -1,0 +1,12 @@
+// reglas del compare
+cmp(3,3)
+ZF=1 CF=0
+cmp(4,3)
+ZF=0, CF=0
+cmp (3,4)
+ZF=0 CF=1
+jg -> 1 operando  > 2do operando
+ZF=0 CF=0
+JNG -> 1 operando < 2do operando
+ZF=0 CF=1
+
