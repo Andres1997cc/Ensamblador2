@@ -16,8 +16,8 @@
 section .data
         msj db '*'
         len equ $ - msj
-        msj2 db 'ingrese las dimensiones',10
-        len2 equ $ - msj2
+        ;msj2 db 'ingrese las dimensiones',10
+        ;len2 equ $ - msj2
         msj_enter db 10,''
 section .bss
         x resb 2
