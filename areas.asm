@@ -110,9 +110,30 @@ circulo:
 	sub bl, '0'
 	mul bl
 	add al, '0'
-	mov [resultado], al
+	mov [resultado],;Ingreso del base 
 
+	escribir msj4, len4
+	leer base, 2
+;Ingreso de la altura
 
+	escribir msj5, len5
+	leer altura, 2 al
+;Ingreso del base 
+
+	escribir msj4, len4
+	leer base, 2
+;Ingreso de la altura
+
+	escribir msj5, len5
+	leer altura, 2
+;Ingreso del base 
+
+	escribir msj4, len4
+	leer base, 2
+;Ingreso de la altura
+
+	escribir msj5, len5
+	leer altura, 2
 ;----------------------
 
 	

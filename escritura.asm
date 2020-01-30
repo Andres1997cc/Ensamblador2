@@ -18,7 +18,7 @@ _start:
         mov ebx,2
         mov ecx,nombre
         mov edx,5
-        int 80Hn
+        int 80H
         mov eax,4
         mov ebx,1
         mov ecx,mensaje1

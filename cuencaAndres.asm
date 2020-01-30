@@ -75,7 +75,7 @@ segundo:
         escribir n3, 1
 
        
-        cmp al,bl
+        cmp [n3],al
         jne noPrimo
         je primo
 primo:
