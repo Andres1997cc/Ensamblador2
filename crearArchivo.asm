@@ -32,8 +32,9 @@ _start:
 
 	escribir msj,len_msj
     leer ruta, 50
-	push ebx
+	
     mov ebx,ruta
+	push ebx
 ;----------ruta
 	mov eax,39 ;servicio para crear un directorio ver el numero en la tabla.
     mov ebx,ruta ;define la ruta del serivicio
@@ -47,7 +48,11 @@ _start:
 	mov edx, 0x1FF		
 	int 80h
 	pop ebx
-	mov dword[ruta],ebx
+
+	mov edx,[nombre]
+	push edx
+	mov dword[ruta],edx
+	pop edx
 
     escribir msj2,len_msj2
 
