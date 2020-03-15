@@ -53,10 +53,10 @@ lectura:
     mov al, [numero]
     sub al, '0'
     mov [esi], al
-
+;incrementamos la posicion y el tamaño del arreglo
     add esi, 1
     add edi, 1
-
+    ;para comparar que no sea el tamaño del arreglo
     cmp edi, len_arreglo
     jb lectura
 
@@ -102,6 +102,7 @@ resultado:
     add al, '0'
 
     mov [menor], al    
+    ;imprime el resultado
 
     imprimir m_mayor, len_mayor
     imprimir mayor,2

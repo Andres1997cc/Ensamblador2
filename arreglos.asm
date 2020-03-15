@@ -40,8 +40,8 @@ leer:
         mov [esi],al
 
         ;incrementar una posicion en el arreglo
-        add esi,1
-        add edi,1
+        add esi,1 ;puntero
+        add edi,1 ; tamaño del arreglo
 
         ;comparar para el salto
         cmp edi,len_arreglo
